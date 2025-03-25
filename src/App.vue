@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   Deploy Example.
+  On Github pages?
 </template>
 
 <style scoped>
