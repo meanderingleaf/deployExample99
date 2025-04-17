@@ -3,18 +3,18 @@ import './style.css'
 import App from './App.vue'
 
 
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from './components/HelloWorld.vue'
 import AboutView from './components/About.vue'
 
 const routes = [
-  { path: '/', component: HomeView },
-  { path: '/about', component: AboutView },
+  { path: '/', name: 'home',  component: HomeView },
+  { path: '/about',  name: 'about',  component: AboutView },
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
