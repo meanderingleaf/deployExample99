@@ -3,8 +3,13 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  Deploy Example.
-  On Github pages?
+   <nav>
+    <RouterLink to="/">Go to Home</RouterLink> - 
+    <RouterLink to="/about">Go to About</RouterLink>
+  </nav>
+   <main>
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
